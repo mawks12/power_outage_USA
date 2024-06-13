@@ -10,7 +10,10 @@ For this project, we will be working with a dataset of Power outages, covering t
 
 **Initial Data Cleaning**  
 The original dataset contained a number of columns, many of which were not used in our analysis. A complete list of all of the columns in the dataset can be found [here](https://www.sciencedirect.com/science/article/pii/S2352340918307182#bib1) under Table 1. The columns that were used in our analysis were: "TODO: list columns used"
-Some of the columns where modified to make them more useful for our analysis. For example, the "OUTAGE.START.DATE" and "OUTAGE.RESTORATION.DATE" columns were converted to datetime objects and merged with the "OUTAGE.START.TIME" and "OUTAGE.RESTORATION.TIME".The "OUTAGE.DURATION" column was also converted to a timedelta object.
+Some of the columns where modified to make them more useful for our analysis. For example, the "OUTAGE.START.DATE" and "OUTAGE.RESTORATION.DATE" columns were converted to datetime objects and merged with the "OUTAGE.START.TIME" and "OUTAGE.RESTORATION.TIME". The "OUTAGE.DURATION" column was also converted to a timedelta object. Afterwords, these were merged into one value, containing the full date and time of the outage. Original Dates and times
+where left as seperate values in case they could become usefull in training a prediction model. 
+
+
 
 
 
